@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script}) }">
+<head>
+    <title data-th-text="${loggedInUser.name}+' |  SCM'">Dashboard Page</title>
+</head>
+<body>
+    <div id="content">
+         <!-- if user is logged in:side bar -->
+    <div th:if="${loggedInUser}">
+
+        <div data-th-replace="~{user/sidebar:: sidebar}"></div>
+    </div>
+<div  class=" pt-16" style="height: 1000;">
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f6;
+            color: #181717;
+        }
+
+       
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+       
+      
+
+        
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgb(216, 204, 204);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #0e1013;
+        }
+
+        .card p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    
+    <div class="main-content sm:pl-64 pt-20">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Here, you can manage your contacts, view insights, and customize your settings.</p>
+
+        <div class="grid-container sm:pl-36 pt-20" style="height: 1000px">
+            <div class="card">
+                <h2>Total Contacts</h2>
+                <p class="dark:text-black">Keep track of all your connections at a glance.</p>
+            </div>
+            <div class="card">
+                <h2>Upcoming Tasks</h2>
+                <p class="dark:text-black">Stay organized with a list of your scheduled tasks and reminders.</p>
+            </div>
+            <div class="card">
+                <h2>Insights</h2>
+                <p class="dark:text-black">Analyze your contact trends and networking activities.</p>
+            </div>
+            <div class="card">
+                <h2>Recent Activity</h2>
+                <p class="dark:text-black">Review your most recent updates and interactions.</p>
+            </div>
+            <div class="card">
+                <h2>Recent Deleted</h2>
+                <p class="dark:text-black">Review your most recent deleted and interactions.</p>
+            </div>
+            <div class="card">
+                <h2> Favorite Contacts</h2>
+                <p class="dark:text-black">Review your all favorite Contacts and interactions.</p>
+            </div>
+        </div>
+    </div>
+</body>
+    </div>
+</div></div>
+<script>
+    console.log("this is dashboard page");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script}) }">
+<head>
+    <title>About Page</title>
+</head>
+<body>
+<div id="content" class="pt-16">
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #2b2929;
+        }
+
+        header {
+            background-color: #1ab16f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .about-section {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .about-section h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #02100a;
+            
+        }
+
+        .about-section p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1ab16f;
+            
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="dark:bg-gray-800">
+        <h1>Smart Contact Manager</h1>
+        <p> Your connections, streamlined and supercharged!!</p>
+    </header>
+
+    <div class="container dark:bg-slate-600">
+        <div class="about-section dark:bg-slate-500">
+            <h2>About Us</h2>
+            <p class=" dark:text-black">Welcome to Smart Contact Manager, the ultimate solution for managing and nurturing your connections effortlessly. Our platform is designed to simplify the way you organize, track, and engage with your network—whether it's personal or professional.</p>
+            <p class="dark:text-black">At Smart Contact Manager, we believe that strong relationships are the foundation of success. That’s why we combine intuitive technology with powerful features to help you stay on top of your contacts, communication, and follow-ups. From small businesses to busy individuals, our tool empowers you to focus on what truly matters—building meaningful relationships.</p>
+            <p class="dark:text-black">Our mission is to transform how you manage your network by delivering simplicity, efficiency, and seamless integration. With Smart Contact Manager, staying connected has never been smarter!
+
+            </p>
+        </div>
+    </div>
+
+    <footer class="dark:bg-gray-800">
+        <p>&copy; 2024 Smart Contact Manager 2.0 All rights reserved.</p>
+    </footer>
+</body>
+</div>
+<script>
+    console.log("about page");
+</script>
+
+</body>
+</html>
+<!-- npx tailwindcss -i src/main/resources/static/css/input.css -o src/main/resources/static/css/output.css --watch -->

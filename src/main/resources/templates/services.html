@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title} ,~{::script})}">
+<head>
+    <title>Services Page </title>
+</head>
+<body>
+    <section id="content" class="pt-16">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #6a6a6e;
+                color: #333;
+            }
+    
+            header {
+                background-color: #1ab16f;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+    
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+    
+            .container {
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+    
+            .services-section {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+            }
+    
+            .service {
+                background: white;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+            }
+    
+            .service h3 {
+                margin-top: 0;
+                font-size: 1.5rem;
+                color: #1ab16f;
+            }
+    
+            .service p {
+                line-height: 1.6;
+                margin: 10px 0;
+            }
+    
+            footer {
+                text-align: center;
+                padding: 10px 0;
+                background-color: #1ab16f;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="dark:bg-gray-800">
+            <h1>Our Services</h1>
+        </header>
+    
+        <div class="container pt-10">
+            <section class="services-section pt-11">
+                <div class="service">
+                    <h3 >Contact Organization</h3>
+                    <p class=" dark:text-black">Easily organize and categorize your contacts with custom tags, groups, and filters to keep your network at your fingertips.</p>
+                </div>
+                <div class="service">
+                    <h3>Advanced Search</h3>
+                    <p class=" dark:text-black">Find contacts in seconds with our intelligent search system that helps you locate anyone based on name, company, or custom criteria.</p>
+                </div>
+                <div class="service">
+                    <h3>Automated Reminders</h3>
+                    <p class=" dark:text-black">Never miss a follow-up. Schedule reminders and stay on top of important dates and tasks effortlessly.</p>
+                </div>
+                <div class="service">
+                    <h3>Integration</h3>
+                    <p class=" dark:text-black"> Sync with your favorite apps, including email and calendar platforms, for seamless contact management.</p>
+                </div>
+                <div class="service">
+                    <h3>Analytics & Insights</h3>
+                    <p class=" dark:text-black">Get actionable insights into your networking patterns and improve your relationship management strategy.</p>
+                </div>
+                <div class="service">
+                    <h3>Secure Cloud Storage</h3>
+                    <p class=" dark:text-black">Enjoy peace of mind with encrypted, cloud-based storage that keeps your contact data safe and accessible anywhere.</p>
+                </div>
+            </section>
+        </div>
+    
+        <footer class="pt-20 dark:bg-gray-800">
+            <p>&copy; 2024 Smart Contact Manager 2.0  All rights reserved.</p>
+        </footer>
+    </body>
+    </section>
+    <script>
+        console.log("services page");
+    </script>
+</body>
+</html>
